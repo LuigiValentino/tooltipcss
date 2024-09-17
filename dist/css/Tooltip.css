@@ -1,0 +1,42 @@
+/* Estilos base */
+.custom-tooltip {
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 12px;
+    z-index: 1000;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+.fade-out {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.infinite-animation {
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.custom-tooltip[data-tooltip-size] {
+    font-size: var(--tooltip-size);
+}

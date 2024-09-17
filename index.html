@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip Library base</title>
+    <link rel="stylesheet" href="./dist/css/Tooltip.css">
+</head>
+<body>
+    <h1>Tooltip Library base</h1>
+    <p data-tooltip="Basic tooltip">Hover over this text for a basic tooltip</p>
+    <p data-tooltip="Custom color tooltip" data-tooltip-color="#ff5733">Hover for custom color tooltip</p>
+    <p data-tooltip="This tooltip has a delay" data-tooltip-delay="500">Hover for delayed tooltip</p>
+    <p data-tooltip="Animated tooltip" data-tooltip-animate="fade">Hover for an animated tooltip</p>
+    <p data-tooltip="Infinite tooltip animation" data-tooltip-infinite="true">Hover for infinite animated tooltip</p>
+    <button data-tooltip="Button tooltip that stays visible" data-tooltip-static="true">Hover over this button, the tooltip will remain visible</button>
+    <p data-tooltip="This tooltip is large" data-tooltip-size="20px">Hover for a larger tooltip</p>
+
+    <script src="./dist/js/tooltip.js"></script>
+</body>
+</html>
